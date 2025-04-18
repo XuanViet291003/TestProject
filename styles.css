@@ -268,25 +268,26 @@ details {
 .tab-controls {
     display: flex;
     justify-content: space-around;
-    padding: 6px 8px 3px;
-    background: #f9f9f9;
+    display: flex;
+    justify-content: space-around;
+    padding: 9px 8px;
     font-size: 10px;
+    background: #eaeaea;
     font-weight: 500;
-    gap: 3px;
-    border-top: 1px solid #ccc;
+    
 }
 
 .tab-controls span {
-    padding: 3px 6px;
     background: #ddd;
     border-radius: 3px;
     cursor: pointer;
+    
 }
 
 .info-block {
     padding: 6px 8px;
-    border-top: 1px solid #ccc;
     font-size: 10px;
+    border-top: 1px solid #d2d2d2;
 }
 
 .info-block h4 {
@@ -294,7 +295,6 @@ details {
     margin: 4px 0 3px;
     font-weight: bold;
     padding-bottom: 1px;
-    border-bottom: 1px solid #ccc;
 }
 
 .info-block p {
@@ -430,7 +430,7 @@ details {
     align-items: center;
     font-size: 11px;
     gap: 20px;
-    background: #ccc;
+    background: #dddddd;
     padding: 0 10px;
 }
 
@@ -459,8 +459,7 @@ details {
     gap: 8px;
     padding: 6px;
     margin-top: 8px;
-    background: #f8f8f8;
-    border: 1px solid #ccc;
+    background: #dddddd;
     border-radius: 4px;
 }
 
@@ -478,8 +477,8 @@ details {
 }
 
 .styled-toolbar button {
-    width: 33px;
-    height: 24px;
+    width: 43px;
+    height: 29px;
     padding: 4px;
     font-size: 12px;
     background: #fff;
@@ -518,50 +517,47 @@ details {
 /*Diagnosis dropdowns */
 .diagnosis-dropdowns {
     display: flex;
-    padding: 6px;
-    background: #e0e0e0;
+    padding: 8px;
+    background: #dddddd;
     border-radius: 4px;
     margin-top: 8px;
-    font-size: 10px;
-    gap: 55px;
+    gap: 30px;
 }
 
 .dropdown-item {
     display: flex;
-    justify-content: left;
+    flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
 .diagnosis-dropdowns p {
-    flex: 0 0 70px;
-    font-weight: 500;
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
     white-space: nowrap;
 }
 
 .diagnosis-dropdowns select {
     width: 200px;
-    height: 20px;
-    padding: 2px 4px;
-    font-size: 10px;
-    border: 1px solid #bbb;
-    border-radius: 2px;
+    height: 24px;
+    padding: 4px 8px;
+    font-size: 11px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
     background: #fff;
     appearance: none;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="%23333" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 4px center #fff;
-    background-size: 8px;
-    padding-right: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%23666" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 8px center #fff;
+    background-size: 10px;
+    padding-right: 24px;
+    cursor: pointer;
 }
 
-
-.diagnosis-section {
-    background: #fafbfc;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 3px;
-    font-size: 11px;
-    margin-bottom: 8px;
-    line-height: 1.4;
-    white-space: pre-line;
+.diagnosis-dropdowns select:focus {
+    outline: none;
+    border-color: #0078d7;
+    box-shadow: 0 0 0 2px rgba(0, 120, 215, 0.2);
 }
 
 /* Nút chọn ảnh và nhóm thao tác ảnh */
@@ -704,25 +700,12 @@ td {
     font-size: 11px;
 }
 
-.title-header > h4 {
-    margin: 10px 12px;
-}
-
 .table-related th,
 .table-related td {
     padding: 6px 8px;
     text-align: left;
     white-space: nowrap;
     border-bottom: 1px solid #ccc;
-}
-
-.table-related td.tt-icon {
-    text-align: center;
-    font-size: 14px;
-}
-
-.table-related tbody tr:hover {
-    background: #fafbfc;
 }
 
 .table-related-header {
@@ -734,16 +717,17 @@ td {
     font-size: 11px;
 }
 
-.table-related-header th input {
-    align-items: center;
-}
-
 .table-related-header th,
 .table-related-header td {
     border: 1px solid #ccc;
     padding: 6px 8px;
     text-align: left;
     white-space: nowrap;
+}
+
+.table-related-header th input {
+    vertical-align: middle; 
+    margin-right: 4px; 
 }
 
 .table-1,
