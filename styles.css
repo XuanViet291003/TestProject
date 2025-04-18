@@ -16,6 +16,7 @@ body {
 .main-content {
     display: flex;
     flex-grow: 1;
+    background: #dddddd;
 }
 
 .content {
@@ -131,7 +132,7 @@ header {
 /* Sidebar */
 .sidebar {
     width: 250px;
-    background: #f4f4f4;
+    background: #dddddd;
     border-right: 1px solid #ccc;
     font-family: Arial, sans-serif;
     font-size: 11px;
@@ -208,7 +209,8 @@ header {
 }
 
 .menu-container {
-    flex-grow: 1; 
+    flex-grow: 1;
+    height: 400px;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -719,10 +721,41 @@ td {
 
 .table-related-header th,
 .table-related-header td {
-    border: 1px solid #ccc;
     padding: 6px 8px;
     text-align: left;
     white-space: nowrap;
+}
+
+.tr2{
+    color: #319f41;
+    background: #dbf4e3;
+}
+
+.tr3{
+    color: #95413e;
+    background: #d8b4b2;
+}
+
+.tr4{
+    color: #7c5c27;
+    background: #d1c6ad;
+}
+
+.table-related tbody td i {
+    color: black; 
+}
+
+.table-related tbody tr:hover {
+    background: #0078d7;
+    cursor: pointer;
+}
+
+.table-related tbody tr:hover td {
+    color: white; 
+}
+
+.table-related tbody tr:hover td i {
+    color: white; 
 }
 
 .table-related-header th input {
