@@ -1,0 +1,215 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background: white;
+    color: #333;
+}
+  
+header {
+    background: #eaeaea;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    height: 30px;
+}
+
+.logo {
+    font-weight: bold;
+    display: flex;
+}
+.logo img{
+    width: 50px;
+}
+
+.logo p{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f2f2f2; 
+    padding: 8px 12px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.header-right span{
+     border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+  
+.group_icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.group_icon1,
+.group_icon2,
+.group_icon3{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px #ccc; 
+}
+  
+.icon_header{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.icon-clo2{
+    background: white;
+    padding: 0 4px;
+}
+.icon-clo1{
+    background: #bcbcbc;
+    padding: 0 4px;
+}
+  
+.group_icon4{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+  
+  .group_icon4 img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+  
+.group_icon4 p{
+    margin: 0;
+    font-weight: bold;
+}
+  
+
+.upload-area {
+    margin: 10px;
+    padding: 10px;
+}
+  
+.upload-drag {
+    text-align: center;
+    padding: 55px;
+    border: 4px dashed #d6d6d6;
+    margin-bottom: 15px;
+    background: #f3f4f4;
+}
+  
+.upload-btn {
+    background-color: #135bd3;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.note-upload{
+    background: #f3f4f4;
+}
+  
+.notes {
+    font-size: 0.9em;
+    color: #666;
+    list-style: none; 
+    padding: 20px;
+}
+  
+.Container-table-text{
+    padding: 0;
+    margin: 0;
+}
+
+.list-table{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    background: #8c8c8c;
+}
+.p1-list{
+    background: #ccc;
+    padding: 0 20px;
+    height: 100%;
+    align-content: center;
+}
+
+.p2-list{
+    background: #8c8c8c;
+    padding: 0 25px;
+}
+
+.p3-list{
+    width: 2px;
+    height: 15px;
+    background: #484848;
+    opacity: 0.5;
+}
+
+.table-area {
+    background: white;
+}
+  
+.table-header {
+    height: 40px;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    font-size: 0.9em;
+    gap: 50px;
+    background: #ccc;
+}
+
+.btn-control{
+    margin-left: 20px;
+}
+
+
+.table-header button,
+.table-header select {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+  
+table thead {
+    background: #ddd;
+}
+  
+table th, table td {
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+  
+/* table tr:nth-child(even) {
+    background: #f9f9f9;
+} */
+
+table tr:hover{
+    background: #135bd3;
+    color: white;
+    cursor: pointer;
+}

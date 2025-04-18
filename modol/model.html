@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu hình người dùng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <span>Cấu hình người dùng</span>
+            <button class="close-btn">✕</button>
+        </div>
+        <hr>
+        <div class="modal-body">
+            <div class="sidebar">
+                <ul class="menu">
+                    <li>
+                        <details>
+                            <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                        </details>
+                    </li>
+
+                    
+                </ul>
+            </div>
+            <div class="content">
+                <p for="notification">Thông báo</p>
+                <select id="notification">
+                    <option>Value</option>
+                </select>
+                <p>Chia đôi màn hình</p>
+                <div class="split-options">
+                    <div class="option64" onclick="selectOption(this)">
+                        <div class="box">
+                            <div class="box-left"><span>Danh</span><span>sách</span></div>
+                            <div class="box-right">Viewer</div>
+                        </div>
+                        <div class="ratio">Tỷ lệ 60:40</div>
+                    </div>
+                    <div class="option55 selected" onclick="selectOption(this)">
+                        <div class="box">
+                            <div class="box-left"><span>Danh</span><span>sách</span></div>
+                            <div class="box-right">Viewer</div>
+                        </div>
+                        <div class="ratio">Tỷ lệ 50:50</div>
+                    </div>
+                    <div class="option46" onclick="selectOption(this)">
+                        <div class="box">
+                            <div class="box-left"><span>Danh</span><span>sách</span></div>
+                            <div class="box-right">Viewer</div>
+                        </div>
+                        <div class="ratio">Tỷ lệ 40:60</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn cancel" id="cancelBtn">Hủy bỏ</button>
+            <button class="btn confirm" id="confirmBtn">Đồng ý</button>
+        </div>
+    </div>
+
+    <script>
+        function selectOption(element) {
+            document.querySelectorAll('.option64, .option55, .option46').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            element.classList.add('selected');
+        }
+        
+        const confirmBtn = document.getElementById('confirmBtn');
+        const cancelBtn = document.getElementById('cancelBtn');
+
+        confirmBtn.addEventListener('click', () => {
+        confirmBtn.classList.add('active');
+        cancelBtn.classList.remove('active');
+        });
+
+        cancelBtn.addEventListener('click', () => {
+        cancelBtn.classList.add('active');
+        confirmBtn.classList.remove('active');
+        });
+
+        
+    </script>
+</body>
+</html>

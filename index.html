@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerva PACS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">
+                <img src="images/Screenshot 2025-04-15 113356-Photoroom.png" alt="">
+                <p>MINERVA PACS</p>
+            </div>
+            <div class="header-right">
+                <div class="group_icon">
+                    <div class="group_icon1">
+                        <img class="icon_header icon-clo1" src="images/Screenshot 2025-04-15 133605-Photoroom.png" alt="">
+                        <img class="icon_header icon-clo2" src="images/Screenshot 2025-04-15 113736-Photoroom.png" alt="">
+                    </div>
+        
+                    <div class="group_icon2">
+                        <img class="icon_header icon-clo1" src="images/Screenshot 2025-04-15 113742-Photoroom.png" alt="">
+                        <img class="icon_header icon-clo2" src="images/Screenshot 2025-04-15 113747-Photoroom.png" alt="">
+                    </div>
+                    <div class="group_icon3">
+                        <img class="icon_header icon-clo2" src="images/Screenshot 2025-04-15 113801-Photoroom.png" alt="">
+                    </div>
+                </div>
+                <span><select><option>Master (K1, K2)</option></select></span>
+                <div class="group_icon4">
+                        <img class="icon_header" src="images/Screenshot 2025-04-15 135502-Photoroom.png" alt="">                
+                    <p>Bs.Nguyễn Mạnh Hà</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Cây làm việc</h3>
+                    <button class="toggle-btn" id="toggle-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+                <div class="filter-bar">
+                    <span>Bộ lọc</span>
+                    <span>Lưu trữ</span>
+                </div>
+                <div class="menu-container"> <!-- Đổi từ class="sidebar" thành class="menu-container" -->
+                    <ul class="menu">
+                        <li>
+                            <details>
+                                <summary><i class="fas fa-save"></i> CT</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><i class="fas fa-save"></i> MR</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><i class="fas fa-save"></i> US</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><i class="fas fa-save"></i> ED</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><i class="fas fa-save"></i> XA</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Danh mục</summary>
+                                <details>
+                                    <summary>Tên filter</summary>
+                                    <ul>
+                                        <li>Tên filter</li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-controls">
+                    <span>Thông tin ca</span>
+                    <span>Xem trước</span>
+                    <span>Lịch sử</span>
+                </div>
+                <div class="info-block">
+                    <h4>THÔNG TIN BỆNH NHÂN</h4>
+                    <p><span>PID:</span> 053856656</p>
+                    <p><span>Họ và tên:</span> Nguyễn Thị Thảo</p>
+                    <p><span>Năm sinh:</span> 1942</p>
+                </div>
+                <div class="info-block">
+                    <h4>THÔNG TIN CA</h4>
+                    <p><span>Ngày chụp:</span> 22/11/2019 08:33</p>
+                    <p><span>Bộ phận:</span> HEAD</p>
+                    <p><span>Ghi chú:</span> CCM NAO CRNN</p>
+                    <p><span>Máy chụp:</span> CT204</p>
+                </div>
+                <div class="info-block">
+                    <h4>YÊU CẦU CHẨN ĐOÁN</h4>
+                    <p><span class="highlight">Ưu tiên:</span> CC</p>
+                    <p><span>Loại chẩn đoán:</span> URS - viêm phổi, tắc nhân không đặc hiệu</p>
+                    <p><span>Bác sĩ chỉ định:</span> BS. Nguyễn Thị Các (thuộc TY - Hồ Hiếu)</p>
+                    <p><span>Chỉ định:</span> An-Ct: CLVT lồng ngực không tiêm thuốc đối quang từ tìm nguyên nhân ho kéo dài, gợi ý lao phổi, hẹp hạch rốn phổi [từ 1-3-2 dày]</p>
+                </div>
+            </aside>
+
+            <!-- Content -->
+            <section class="content">
+                <!-- Tabs và Filters -->
+                <div class="list-table">
+                    <p class="p1-list">Danh sách ca</p>
+                    <p class="p2-list">Doan Hoang Giang  <span class="close-tab">X</span></p>
+                    <p class="p3-list"></p>
+                    <p class="p2-list">Quynh Nguyen  <span class="close-tab">X</span></p>
+                    <p class="p3-list"></p>
+                </div>
+                <div class="filters-inline">
+                    <div class="filters-inline-row">
+                        <div class="filter-item">
+                            <label>Mã bệnh nhân</label>
+                            <input type="text">
+                        </div>
+                        <div class="filter-item">
+                            <label>Tên bệnh nhân</label>
+                            <input type="text" value="Doan Hoang Giang">
+                        </div>
+                        <div class="filter-item">
+                            <label>Trạng thái</label>
+                            <select>
+                                <option value="">Tất cả</option>
+                                <option value="tat-ca" selected>Tất cả</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label>Ngày chụp</label>
+                            <select>
+                                <option value="">Tất cả</option>
+                                <option value="date-range" selected>01/01/2018 - 01/01/2019</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label>Kết quả đọc</label>
+                            <input type="text">
+                        </div>
+                        <div class="button-group">
+                            <button class="btn-refresh"><i class="fa-solid fa-rotate"></i> Làm mới</button>
+                            <button class="btn-advanced">Nâng cao</button>
+                        </div>
+                    </div>
+                    <div class="filters-inline-row">
+                        <div class="filter-item">
+                            <label>Năm sinh</label>
+                            <input type="text" value="Nam">
+                        </div>
+                        <div class="filter-item">
+                            <label>Giới tính</label>
+                            <select>
+                                <option value="">Tất cả</option>
+                                <option value="tat-ca" selected>Tất cả</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label>Loại chụp</label>
+                            <select>
+                                <option value="">Tất cả</option>
+                                <option value="tat-ca" selected>Tất cả</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label>Ghi chú</label>
+                            <input type="text">
+                        </div>
+                        <div class="filter-item">
+                            <label>Mã bệnh</label>
+                            <select>
+                                <option value="">Tất cả</option>
+                                <option value="tat-ca" selected>Tất cả</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thanh phân trang phía trên bảng -->
+                <div class="table-header">
+                    <div class="btn-control">
+                        <button class="btn-left"><</button>
+                        <button class="btn-right">></button>
+                    </div>
+                    <span>Trang <select><option>2</option></select></span>
+                    <div>Hiển thị <select><option>100</option></select> ca</div>
+                    <div>Tổng số ca: <strong>430</strong></div>
+                </div>
+
+                <div>
+                    <table class="table-related">
+                        <thead>
+                            <tr class="table-related-header">
+                                <th><input type="checkbox"> Trạng thái</th>
+                                <th>Tên bệnh nhân</th>
+                                <th>Mã bệnh nhân</th>
+                                <th>Năm sinh</th>
+                                <th>Giới tính</th>
+                                <th>TT bổ sung</th>
+                                <th>Ngày/Giờ chụp</th>
+                                <th>Dịch vụ</th>
+                                <th>Modality</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="title-header">
+                    <h4>Ca liên quan</h4>
+                    <table class="table-related">
+                        <thead>
+                            <tr class="table-related-header">
+                                <th><input type="checkbox"> Trạng thái</th>
+                                <th>Tên bệnh nhân</th>
+                                <th>Mã bệnh nhân</th>
+                                <th>Năm sinh</th>
+                                <th>Giới tính</th>
+                                <th>TT bổ sung</th>
+                                <th>Ngày/Giờ chụp</th>
+                                <th>Dịch vụ</th>
+                                <th>Modality</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> Đã duyệt</td>
+                                <td>Nguyen Cong Tu</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td><i class="fas fa-save"></td>
+                                <td>01/01/2018</td>
+                                <td>Chụp Xquang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Toolbar dưới bảng -->
+                            <div class="styled-toolbar">
+                                <div class="toolbar-controler">
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-plus"></i></button>
+                                        <span>Nhận ca</span>
+                                        <small>Alt+N</small>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-controler">
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-eye"></i></button>
+                                        <span>Xem ảnh</span>
+                                        <small>Alt+V</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-camera"></i></button>
+                                        <span>Chụp ảnh</span>
+                                        <small>Alt+C</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-link"></i></button>
+                                        <span>Link ảnh</span>
+                                        <small>Alt+L</small>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-controler">
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-file-medical"></i></button>
+                                        <span>Thêm CD</span>
+                                        <small>Alt+M</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-save"></i></button>
+                                        <span>Duyệt CD</span>
+                                        <small>Alt+N</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-edit"></i></button>
+                                        <span>Sửa CD</span>
+                                        <small>Alt+D</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-lock"></i></button>
+                                        <span>Hủy khóa</span>
+                                        <small>Alt+E</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-print"></i></button>
+                                        <span>In</span>
+                                        <small>Alt+P</small>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-controler">
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-file-import"></i></button>
+                                        <span>Duyệt và in</span>
+                                        <small>Alt+I</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-box"></i></button>
+                                        <span>In nhanh</span>
+                                        <small>Alt+C</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-box"></i></button>
+                                        <span>Thêm vật tư</span>
+                                        <small>Alt+C</small>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-controler">
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-exchange-alt"></i></button>
+                                        <span>Chuyển ca</span>
+                                        <small>Alt+C</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-comment-alt"></i></button>
+                                        <span>Ghi chú</span>
+                                        <small>Alt+C</small>
+                                    </div>
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-file-import"></i></button>
+                                        <span>Duyệt</span>
+                                        <small>Alt+I</small>
+                                    </div>
+                                </div>
+                                <div class="toolbar-controler">
+                                    <div class="toolbar-item">
+                                        <button><i class="fas fa-lock"></i></button>
+                                        <span> khóa</span>
+                                        <small>Alt+E</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                <!-- Dòng chọn chẩn đoán -->
+                <div class="app-section">
+                        <div class="diagnosis-dropdowns">
+                            <div class="dropdown-item">
+                                <p>Chẩn đoán</p>
+                                <select>
+                                    <option>Lần 3 | Chẩn đoán mới | BS Nguyễn Hùng</option>
+                                </select>
+                            </div>
+                            <div class="dropdown-item">
+                                <p>Dịch vụ</p>
+                                <select>
+                                    <option>XA021 - XQuang chân</option>
+                                </select>
+                            </div>
+                            <div class="dropdown-item">
+                                <p>Mẫu KQ</p>
+                                <select>
+                                    <option>XA021 - XQuang chân</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    <div class="diagnosis-table">
+                        <div class="diagnosis-section">
+                            Kỹ thuật chụp: Chụp Xquang cột sống cổ thẳng nghiêng |<br>
+                            -- Không thấy gãy xẹp các đốt sống.<br>
+                            -- Không thấy hẹp các khoảng liên đốt sống.<br>
+                            -- Cấu trúc các đốt sống không thấy bất thường.<br><br>
+                            Hiện tại không thấy hình ảnh bất thường xương cột sống cổ trên phim
+                        </div>
+
+                        <table class="table-1">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 150px; vertical-align: top;">
+                                        <button class="image-button">
+                                            <img src="https://img.icons8.com/ios/20/image--v1.png" alt="icon">
+                                            Chọn ảnh
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="image-preview">
+                                            <div class="images">
+                                                <img src="images/Screenshot 2025-04-18 000303.png" alt="x1">
+                                                <img src="images/Screenshot 2025-04-18 000310.png" alt="x2">
+                                                <img src="images/Screenshot 2025-04-18 000319.png" alt="x3">
+                                                <img src="images/Screenshot 2025-04-18 000310.png" alt="x4">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table-2">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 150px; vertical-align: top;">
+                                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                                            <button class="image-button primary"><i class="fas fa-camera"></i> Chụp ảnh</button>
+                                            <button class="image-button"><i class="fas fa-upload"></i> Tải lên</button>
+                                            <button class="image-button"><i class="fas fa-cogs"></i> Cấu hình</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="image-preview">
+                                            <div class="images">
+                                                <img src="images/Screenshot 2025-04-18 000331.png"x1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Footer controls -->
+                    <div class="footer-controls">
+                        <div class="control-item">
+                            <label>Người ký</label>
+                            <div class="selected-value">
+                                <span>BS Phạm Tuấn Tú</span>
+                                <button class="clear-btn">×</button>
+                            </div>
+                        </div>
+                        <div class="control-item">
+                            <label>Mã bệnh ID</label>
+                            <select>
+                                <option>A1234</option>
+                            </select>
+                        </div>
+                        <div class="control-item">
+                            <label>Người chụp</label>
+                            <div class="selected-value">
+                                <span>BS Phạm Tuấn Tú</span>
+                                <button class="clear-btn">×</button>
+                            </div>
+                        </div>
+                        <div class="control-item">
+                            <label>Thẻ tag</label>
+                            <div class="selected-value">
+                                <span>Tag name</span>
+                                <button class="clear-btn">×</button>
+                            </div>
+                        </div>
+                        <div class="control-item">
+                            <label>Y tá</label>
+                            <div class="selected-value">
+                                <span>Lê Minh Thủy</span>
+                                <button class="clear-btn">×</button>
+                            </div>
+                        </div>
+                        <div class="control-item">
+                            <label>Chẩn đoán</label>
+                            <select>
+                                <option>Có</option>
+                                <option>Không</option>
+                            </select>
+                        </div>
+                        <div class="control-item">
+                            <label>Giải phẫu</label>
+                            <select>
+                                <option>A1234</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggle-btn');
+        const icon = toggleBtn.querySelector('i');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            if (sidebar.classList.contains('collapsed')) {
+                icon.classList.remove('fa-chevron-left');
+                icon.classList.add('fa-chevron-right');
+            } else {
+                icon.classList.remove('fa-chevron-right');
+                icon.classList.add('fa-chevron-left');
+            }
+        });
+    </script>
+</body>
+</html>
