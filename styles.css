@@ -708,6 +708,7 @@ td {
     text-align: left;
     white-space: nowrap;
     border-bottom: 1px solid #ccc;
+    font-weight: 500;
 }
 
 .table-related-header {
@@ -717,6 +718,7 @@ td {
     margin-top: 10px;
     background: #e0e0e0;
     font-size: 11px;
+    font-weight: 500;
 }
 
 .table-related-header th,
@@ -724,6 +726,7 @@ td {
     padding: 6px 8px;
     text-align: left;
     white-space: nowrap;
+    font-weight: 500;
 }
 
 .tr2{
@@ -732,13 +735,13 @@ td {
 }
 
 .tr3{
-    color: #95413e;
-    background: #d8b4b2;
+    color: #a14b48;
+    background: #ead8d8;
 }
 
 .tr4{
     color: #7c5c27;
-    background: #d1c6ad;
+    background: #e6dfcc;
 }
 
 .table-related tbody td i {
